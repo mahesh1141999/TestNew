@@ -14,10 +14,8 @@ public class TestClass {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("Test");
-		System.out.println("Test");System.out.println("Test")
+		;System.out.println("Test");System.out.println("Test");
 		;System.out.println("Test");
-		System.out.println("Test");
-		System.out.println("Test");
 	}
 
 }
