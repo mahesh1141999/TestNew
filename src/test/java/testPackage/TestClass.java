@@ -9,14 +9,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestClass {
 	@Test
-	public void a() {
+	public void a() throws Exception {
 		System.out.println("Test");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://pharmacist-dev.arine.io/");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input [@name = 'email']")).sendKeys("maheshp@benchmarkit.solutions");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input [@name = 'password']")).sendKeys("Password#1");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[@type= 'submit']")).click();
 	}
 
