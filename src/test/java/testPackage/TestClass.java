@@ -19,8 +19,9 @@ public class TestClass {
 		driver.findElement(By.xpath("//input [@name = 'email']")).sendKeys("maheshp@benchmarkit.solutions");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input [@name = 'password']")).sendKeys("Password#1");
-		Thread.sleep(3000);
+		Thread.sleep(3000);	
 		driver.findElement(By.xpath("//button[@type= 'submit']")).click();
+		System.out.println();
 	}
 
 }
